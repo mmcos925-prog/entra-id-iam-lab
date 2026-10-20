@@ -19,8 +19,9 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | 2b | [Conditional Access & Break-Glass Accounts](labs/lab2b-conditional-access.md) | Replacing Security defaults, emergency-access account, MFA for all users, Report-only mode, What If tool, sign-in log verification |
 | 3 | [Identity Protection & Risk-Based Access](labs/lab3-identity-protection.md) | Sign-in and user risk policies, simulated anonymous-IP sign-in, Microsoft Graph `confirmCompromised`, self-remediation and session revocation |
 | 4 | [Application Integration: SAML SSO, App Registrations & Consent](labs/lab4-app-integration.md) | SAML single sign-on, assignment-required apps (AADSTS50105), delegated vs. application permissions, admin consent, user consent lockdown, admin consent workflow |
+| 5a | [Entitlement Management: Catalogs & Access Packages](labs/lab5a-entitlement-management.md) | Catalog of delegated resources, access package with self-request, approval, justification, and 30-day expiration, delivered via My Access |
 
-**Coming next:** entitlement management, access reviews, Privileged Identity Management (PIM), and monitoring with Log Analytics.
+**Coming next:** access reviews, Privileged Identity Management (PIM), and monitoring with Log Analytics.
 
 ---
 
@@ -32,6 +33,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 - **Conditional Access:** policy design, exclusions, Report-only rollout, What If simulation, lockout prevention
 - **Identity Protection:** sign-in risk vs. user risk, risk-based policies, risk investigation and remediation
 - **Troubleshooting:** sign-in logs, Conditional Access results, risk reports and user risk timelines
+- **Identity governance:** entitlement management catalogs, access packages, approval workflows, time-bound access
 - **Application access:** SAML SSO, app assignment, app registrations, delegated vs. application permissions, consent governance
 - **Automation:** Microsoft Graph API (Graph Explorer)
 
