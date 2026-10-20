@@ -21,8 +21,9 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | 4 | [Application Integration: SAML SSO, App Registrations & Consent](labs/lab4-app-integration.md) | SAML single sign-on, assignment-required apps (AADSTS50105), delegated vs. application permissions, admin consent, user consent lockdown, admin consent workflow |
 | 5a | [Entitlement Management: Catalogs & Access Packages](labs/lab5a-entitlement-management.md) | Catalog of delegated resources, access package with self-request, approval, justification, and 30-day expiration, delivered via My Access |
 | 5b | [Access Reviews](labs/lab5b-access-reviews.md) | Group membership review with a designated reviewer, required justification, remove-on-no-response, and auto-applied results |
+| 5c | [Privileged Identity Management (PIM)](labs/lab5c-pim.md) | Eligible vs. active roles, just-in-time activation with MFA, justification, and approval, time-bound access, PIM audit trail |
 
-**Coming next:** Privileged Identity Management (PIM) and monitoring with Log Analytics.
+**Coming next:** monitoring with Log Analytics, workbooks, and KQL.
 
 ---
 
@@ -34,7 +35,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 - **Conditional Access:** policy design, exclusions, Report-only rollout, What If simulation, lockout prevention
 - **Identity Protection:** sign-in risk vs. user risk, risk-based policies, risk investigation and remediation
 - **Troubleshooting:** sign-in logs, Conditional Access results, risk reports and user risk timelines
-- **Identity governance:** entitlement management catalogs, access packages, approval workflows, time-bound access, access reviews with auto-applied removals
+- **Identity governance:** entitlement management catalogs, access packages, approval workflows, time-bound access, access reviews with auto-applied removals, just-in-time privileged access with PIM
 - **Application access:** SAML SSO, app assignment, app registrations, delegated vs. application permissions, consent governance
 - **Automation:** Microsoft Graph API (Graph Explorer)
 
