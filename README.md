@@ -18,8 +18,9 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | 2a | [MFA, SSPR & Password Protection](labs/lab2a-mfa-sspr-password-protection.md) | Authentication methods policy, passkeys, Temporary Access Pass onboarding, self-service password reset, banned passwords, smart lockout |
 | 2b | [Conditional Access & Break-Glass Accounts](labs/lab2b-conditional-access.md) | Replacing Security defaults, emergency-access account, MFA for all users, Report-only mode, What If tool, sign-in log verification |
 | 3 | [Identity Protection & Risk-Based Access](labs/lab3-identity-protection.md) | Sign-in and user risk policies, simulated anonymous-IP sign-in, Microsoft Graph `confirmCompromised`, self-remediation and session revocation |
+| 4 | [Application Integration: SAML SSO, App Registrations & Consent](labs/lab4-app-integration.md) | SAML single sign-on, assignment-required apps (AADSTS50105), delegated vs. application permissions, admin consent, user consent lockdown, admin consent workflow |
 
-**Coming next:** application integration (SSO and app registrations), entitlement management, access reviews, Privileged Identity Management (PIM), and monitoring with Log Analytics.
+**Coming next:** entitlement management, access reviews, Privileged Identity Management (PIM), and monitoring with Log Analytics.
 
 ---
 
@@ -31,6 +32,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 - **Conditional Access:** policy design, exclusions, Report-only rollout, What If simulation, lockout prevention
 - **Identity Protection:** sign-in risk vs. user risk, risk-based policies, risk investigation and remediation
 - **Troubleshooting:** sign-in logs, Conditional Access results, risk reports and user risk timelines
+- **Application access:** SAML SSO, app assignment, app registrations, delegated vs. application permissions, consent governance
 - **Automation:** Microsoft Graph API (Graph Explorer)
 
 ---
@@ -62,6 +64,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | CA policy warned about lockout | Policy applied to the signed-in admin | Kept the admin in scope (MFA registered) and excluded only the break-glass group |
 | Risk reports lagged behind | Reports populate later than sign-in logs | Verified the policy result in the sign-in log's Conditional Access tab first |
 | No portal option to confirm a user compromised | User had no existing risk | Used Microsoft Graph `confirmCompromised` |
+| SAML app didn't complete sign-in | Service provider didn't consume the assertion | Proved the IdP side worked with a **Success** sign-in log and isolated the fault to the app |
 
 ---
 
