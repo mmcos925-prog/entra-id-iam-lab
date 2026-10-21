@@ -22,8 +22,9 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | 5a | [Entitlement Management: Catalogs & Access Packages](labs/lab5a-entitlement-management.md) | Catalog of delegated resources, access package with self-request, approval, justification, and 30-day expiration, delivered via My Access |
 | 5b | [Access Reviews](labs/lab5b-access-reviews.md) | Group membership review with a designated reviewer, required justification, remove-on-no-response, and auto-applied results |
 | 5c | [Privileged Identity Management (PIM)](labs/lab5c-pim.md) | Eligible vs. active roles, just-in-time activation with MFA, justification, and approval, time-bound access, PIM audit trail |
+| 6 | [Monitoring: Log Analytics, KQL & Workbooks](labs/lab6-monitoring.md) | Streaming Entra logs with diagnostic settings, resource provider registration, KQL investigation of sign-ins and audits, Conditional Access insights workbook |
 
-**Coming next:** monitoring with Log Analytics, workbooks, and KQL.
+All core SC-300 labs are complete. **Coming next:** B2B guest access and exam practice.
 
 ---
 
@@ -35,6 +36,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 - **Conditional Access:** policy design, exclusions, Report-only rollout, What If simulation, lockout prevention
 - **Identity Protection:** sign-in risk vs. user risk, risk-based policies, risk investigation and remediation
 - **Troubleshooting:** sign-in logs, Conditional Access results, risk reports and user risk timelines
+- **Monitoring:** Log Analytics, diagnostic settings, KQL queries, workbooks
 - **Identity governance:** entitlement management catalogs, access packages, approval workflows, time-bound access, access reviews with auto-applied removals, just-in-time privileged access with PIM
 - **Application access:** SAML SSO, app assignment, app registrations, delegated vs. application permissions, consent governance
 - **Automation:** Microsoft Graph API (Graph Explorer)
@@ -67,6 +69,7 @@ Each lab includes what I built, the problems I hit and how I fixed them, test re
 | Scoped admin could reset an out-of-scope user | Test was run as the Global Admin | Retested in a separate session as the scoped admin |
 | CA policy warned about lockout | Policy applied to the signed-in admin | Kept the admin in scope (MFA registered) and excluded only the break-glass group |
 | Risk reports lagged behind | Reports populate later than sign-in logs | Verified the policy result in the sign-in log's Conditional Access tab first |
+| Diagnostic setting failed: `Microsoft.Insights/register/action` | Resource provider not registered; admin's Azure role was resource-group scoped | Registered Microsoft.Insights at subscription scope as Owner |
 | No portal option to confirm a user compromised | User had no existing risk | Used Microsoft Graph `confirmCompromised` |
 | SAML app didn't complete sign-in | Service provider didn't consume the assertion | Proved the IdP side worked with a **Success** sign-in log and isolated the fault to the app |
 
